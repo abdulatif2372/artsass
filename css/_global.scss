@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@mixin monster(){
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+@mixin opensans(){
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+@mixin jast(){
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing:border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+@mixin card(){
+    width: 100%;
+    padding: 4rem 0;
+}
+.title{
+    text-align: center;
+    h2{
+        font-size: 2rem;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:500;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+    }
+}
+    @mixin grid ($repeat){
+        display: grid;
+        grid-template-columns: $repeat;
+        gap: 3rem;
+        align-items: center;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        line-height: 1.5;
+    }
+    a{
+        color: white;
+    }

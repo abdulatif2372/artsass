@@ -1,0 +1,17 @@
+@media only screen and (max-width:768px) {
+    .header .navigation .navbar .navbar__nav a {
+        display: none;
+    }
+    .header .banner .banner__content h1{
+        font-size: 3rem;
+    }
+    .blog__content{
+        grid-template-columns:(1fr);
+    }
+    .design__content{
+        grid-template-columns:( 1fr);
+    }
+    .about__content {
+        grid-template-columns:(1fr);
+    }
+}
